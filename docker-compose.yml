@@ -1,0 +1,66 @@
+version: '3'
+services:
+    web:
+        image: webdevops/php-apache-dev:7.3
+        container_name: web
+        restart: always
+        user: application
+        environment:
+          - WEB_ALIAS_DOMAIN=local.mageshop-9.com
+          - WEB_DOCUMENT_ROOT=/app/pub
+          - PHP_DATE_TIMEZONE=EST
+          - PHP_DISPLAY_ERRORS=1
+          - PHP_MEMORY_LIMIT=2048M
+          - PHP_MAX_EXECUTION_TIME=300
+          - PHP_POST_MAX_SIZE=500M
+          - PHP_UPLOAD_MAX_FILESIZE=1024M
+        volumes:
+          - "./:/app:cached"
+        ports:
+          - "80:80"
+          - "443:443"
+          - "32823:22"
+        links:
+          - mysql
+          # link web service to Redis service
+          - redis
+    mysql:
+        image: mariadb:10
+        container_name: mysql
+        restart: always
+        ports:
+          - "3306:3306"
+        environment:
+          - MYSQL_ROOT_PASSWORD=mysql
+          - MYSQL_DATABASE=magento_9
+        volumes:
+          - db-data:/var/lib/mysql
+    phpmyadmin:
+        container_name: phpmyadmin
+        restart: always
+        image: phpmyadmin/phpmyadmin:latest
+        environment:
+          - MYSQL_ROOT_PASSWORD=mysql
+          - PMA_USER=root
+          - PMA_PASSWORD=mysql
+        ports:
+          - "8080:80"
+        links:
+          - mysql:db
+        depends_on:
+          - mysql
+    #add Redis service and connect to internal data volume
+    redis:
+        image: redis:latest
+        container_name: redis
+        restart: always
+        volumes:
+          - redis-data:/data
+
+
+volumes:
+    db-data:
+        external: false
+    #add internal data volume so that data persists
+    redis-data:
+        external: false  

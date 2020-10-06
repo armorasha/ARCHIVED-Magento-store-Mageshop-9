@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Mageshop9_TestModule::customdev" title="Custom Dev" module="Mageshop9_TestModule" sortOrder="51" resource="Mageshop9_TestModule::customdev"/>
+        <add id="Mageshop9_TestModule::post" title="Posts" module="Mageshop9_TestModule" sortOrder="10" action="mageshop9_testmodule/post" resource="Mageshop9_TestModule::post" parent="Mageshop9_TestModule::customdev"/>
+       
+    </menu>
+</config>

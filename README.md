@@ -1,5 +1,10 @@
 # Magento-store-Mageshop-9
 
-#### Mageshop-9 is a Magento 2 store that has custom built magento modules, data-driven Views/Layouts/Block/Templates, database schema modifications and all things magento code-based-customisations. The store runs on Docker and has built-in Redis caching as front-end cache to speed up page loads. Docker Engine is running on top of Linux.
+Mageshop-9 is a Magento v2.3.5 store that I have customised with:
+- custom built magento modules
+- data-driven Views/Layouts/Block/Templates
+- widgets to display dynamic content like best sellers
+- database schema modifications
+- and many magento code-based-customisations.
 
-#### Screenshots of store customisations: (will be added soon)
+The store runs on **Docker** and has **Redis caching** built-in as front-end cache to speed up page loads. **Docker Engine** is running on top of **Linux Ubuntu**.

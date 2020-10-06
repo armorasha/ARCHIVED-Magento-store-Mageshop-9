@@ -67,3 +67,6 @@ atlassian*
 /generated/*
 !/generated/.htaccess
 .DS_Store
+
+# original env file without redis addition
+/app/etc/env-*.php

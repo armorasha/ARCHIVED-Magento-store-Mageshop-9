@@ -13,6 +13,13 @@ class Index extends \Magento\Backend\App\Action
         $this->resultPageFactory = $resultPageFactory;
     }
 
+    // R added this method from video
+    protected function someControllerMethod()
+    {
+        return $this->_authorization->isAllowed('Mageshop9_TestModule::post');
+    }
+
+
     public function execute()
     {
         $resultPage = $this->resultPageFactory->create();

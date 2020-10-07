@@ -261,6 +261,7 @@ return [
         'Klarna_Kp' => 1,
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
+        'Mageshop9_ProductModule' => 1,
         'Mageshop9_TestModule' => 1,
         'Temando_ShippingRemover' => 1,
         'Vertex_Tax' => 1,

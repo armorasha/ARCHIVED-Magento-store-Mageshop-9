@@ -543,21 +543,21 @@
         },
         {
             "name": "colinmollenhour/php-redis-session-abstract",
-            "version": "v1.4.2",
+            "version": "v1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/colinmollenhour/php-redis-session-abstract.git",
-                "reference": "669521218794f125c7b668252f4f576eda65e1e4"
+                "reference": "39ca38da5e0a981bc1a7e39a86693c128784a513"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colinmollenhour/php-redis-session-abstract/zipball/669521218794f125c7b668252f4f576eda65e1e4",
-                "reference": "669521218794f125c7b668252f4f576eda65e1e4",
+                "url": "https://api.github.com/repos/colinmollenhour/php-redis-session-abstract/zipball/39ca38da5e0a981bc1a7e39a86693c128784a513",
+                "reference": "39ca38da5e0a981bc1a7e39a86693c128784a513",
                 "shasum": ""
             },
             "require": {
                 "colinmollenhour/credis": "~1.6",
-                "php": "^5.5 || ^7.0"
+                "php": "^5.5 || ^7.0|| ^7.1 || ^7.2"
             },
             "type": "library",
             "autoload": {
@@ -576,7 +576,7 @@
             ],
             "description": "A Redis-based session handler with optimistic locking",
             "homepage": "https://github.com/colinmollenhour/php-redis-session-abstract",
-            "time": "2020-01-08T17:41:01+00:00"
+            "time": "2020-10-07T09:47:22+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -15403,7 +15403,7 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.4.14",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
@@ -15722,16 +15722,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.4.14",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "0d386979828c15d37ff936bf9bae2ecbfa36d7dc"
+                "reference": "ebc51494739d3b081ea543ed7c462fa73a4f74db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/0d386979828c15d37ff936bf9bae2ecbfa36d7dc",
-                "reference": "0d386979828c15d37ff936bf9bae2ecbfa36d7dc",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/ebc51494739d3b081ea543ed7c462fa73a4f74db",
+                "reference": "ebc51494739d3b081ea543ed7c462fa73a4f74db",
                 "shasum": ""
             },
             "require": {
@@ -15782,20 +15782,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-02T16:08:58+00:00"
+            "time": "2020-09-27T13:54:16+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v4.4.14",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "5ef0f6c609c1a36f723880dfe78301199bc96868"
+                "reference": "60d08560f9aa72997c44077c40d47aa28a963230"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/5ef0f6c609c1a36f723880dfe78301199bc96868",
-                "reference": "5ef0f6c609c1a36f723880dfe78301199bc96868",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/60d08560f9aa72997c44077c40d47aa28a963230",
+                "reference": "60d08560f9aa72997c44077c40d47aa28a963230",
                 "shasum": ""
             },
             "require": {
@@ -15845,7 +15845,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-02T16:08:58+00:00"
+            "time": "2020-10-02T07:34:48+00:00"
         },
         {
             "name": "symfony/options-resolver",
@@ -16764,7 +16764,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.4.14",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
